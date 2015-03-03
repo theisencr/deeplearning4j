@@ -265,7 +265,7 @@
                     <format>xml</format>
                     <linkXref>false</linkXref>
                     <rulesets>
-                    <!--    <ruleset>/rulesets/java/basic.xml</ruleset>
+                        <ruleset>/rulesets/java/basic.xml</ruleset>
                         <ruleset>/rulesets/java/braces.xml</ruleset>
                         <ruleset>/rulesets/java/imports.xml</ruleset>
                         <ruleset>/rulesets/java/logging-java.xml</ruleset>
@@ -273,7 +273,7 @@
                         <ruleset>/rulesets/java/optimizations.xml</ruleset>
                         <ruleset>/rulesets/java/strings.xml</ruleset>
                         <ruleset>/rulesets/java/sunsecure.xml</ruleset>
-                        <ruleset>/rulesets/java/unusedcode.xml</ruleset> -->
+                        <ruleset>/rulesets/java/unusedcode.xml</ruleset>
                         <ruleset>${project.basedir}/csc_pmd.xml</ruleset>
                     </rulesets>
                     <!-- CPD options 
@@ -344,7 +344,7 @@
                     <format>xml</format>
                     <linkXref>false</linkXref>
                     <rulesets>
-                    <!--    <ruleset>/rulesets/java/basic.xml</ruleset>
+                        <ruleset>/rulesets/java/basic.xml</ruleset>
                         <ruleset>/rulesets/java/braces.xml</ruleset>
                         <ruleset>/rulesets/java/imports.xml</ruleset>
                         <ruleset>/rulesets/java/logging-java.xml</ruleset>
@@ -352,7 +352,7 @@
                         <ruleset>/rulesets/java/optimizations.xml</ruleset>
                         <ruleset>/rulesets/java/strings.xml</ruleset>
                         <ruleset>/rulesets/java/sunsecure.xml</ruleset>
-                        <ruleset>/rulesets/java/unusedcode.xml</ruleset> -->
+                        <ruleset>/rulesets/java/unusedcode.xml</ruleset>
                         <ruleset>${project.basedir}/csc_pmd.xml</ruleset>
                     </rulesets>
                     <!-- CPD options 
