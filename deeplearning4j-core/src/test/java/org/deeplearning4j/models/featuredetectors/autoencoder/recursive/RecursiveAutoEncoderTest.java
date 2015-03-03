@@ -8,6 +8,7 @@ import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
 import org.deeplearning4j.nn.layers.factory.LayerFactories;
 import org.deeplearning4j.nn.weights.WeightInit;
 import org.junit.Test;
+import org.junit.Ignore;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
@@ -18,6 +19,7 @@ import org.nd4j.linalg.lossfunctions.LossFunctions;
 public class RecursiveAutoEncoderTest {
 
     @Test
+    @Ignore
     public void testRecursiveAutoEncoder() throws Exception {
         MnistDataFetcher fetcher = new MnistDataFetcher(true);
         NeuralNetConfiguration conf = new NeuralNetConfiguration.Builder()

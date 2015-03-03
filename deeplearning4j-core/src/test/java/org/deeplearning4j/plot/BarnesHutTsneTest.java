@@ -16,6 +16,7 @@ import java.util.List;
 public class BarnesHutTsneTest {
 
     @Test
+    @Ignore
     public void testTsne() throws Exception {
         BarnesHutTsne b = new BarnesHutTsne.Builder().stopLyingIteration(100)
                 .theta(0.3).learningRate(500).useAdaGrad(false)

@@ -7,6 +7,7 @@ import org.deeplearning4j.nn.api.OptimizationAlgorithm;
 import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
 import org.deeplearning4j.nn.layers.factory.LayerFactories;
 import org.junit.Test;
+import org.junit.Ignore;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.DataSet;
 import org.nd4j.linalg.lossfunctions.LossFunctions;
@@ -15,6 +16,7 @@ import static org.junit.Assert.assertEquals;
 
 public class AutoEncoderTest {
         @Test
+        @Ignore
         public void testDenoisingAutoEncoder() throws Exception {
 
                 MnistDataFetcher fetcher = new MnistDataFetcher(true);
