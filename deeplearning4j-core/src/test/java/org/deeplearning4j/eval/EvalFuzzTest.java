@@ -17,6 +17,8 @@ public class EvalFuzzTest {
     public void testEvalFuzz() {
         Random rand = new Random();
         rand.setSeed(123456789);
+        int max = 7;
+        int min = 3;
 
         int randomInt = rand.nextInt((max - min) + 1) + min;
 
