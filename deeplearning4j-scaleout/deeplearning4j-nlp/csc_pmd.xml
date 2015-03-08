@@ -255,6 +255,37 @@
   
       ]]></example>
    </rule>
+<rule name="IfElseIfElseStatementBraces" language="java" message="Use braces for if/else if/else statements" class="net.sourceforge.pmd.lang.rule.XPathRule">
+  <description>
+  Even if the body of an if / else if/ else statement is one line, 
+  braces should be used for clarity and to avoid issues in the 
+  future when code is modified.
+  </description>
+  <properties>
+    <property name="xpath">
+    <value>
+<![CDATA[
+//IfStatement[not(Statement/Block)]
+]]>
+    </value>
+    </property>
+  </properties>
+  <priority>3</priority>
+  <example>
+<![CDATA[
+public class Example {
+  public void foo(int num) {
+    if(num == 1) 
+      bar.doSomething1();
+    else if (num == 2) 
+      bar.doSomething2();
+    else 
+      bar.doSomething3();   
+  }
+}
+]]>
+  </example>
+</rule>
    <rule message="Avoid using short method names" ref="rulesets/java/naming.xml/ShortMethodName" priority="3"/>
    <rule message="Method name does not begin with a lower case character." ref="rulesets/java/naming.xml/MethodNamingConventions" priority="1"/>
    <rule message="Class names should begin with an uppercase character" ref="rulesets/java/naming.xml/ClassNamingConventions" priority="1"/>
