@@ -13,7 +13,7 @@ import java.lang.Math;
 /**
  * Created by agibsonccc on 6/11/14.
  */
-public class MovingWindowMatrixTest {
+public class MovingWindowMatrixFuzzTest {
 
     @Test
     public void testMovingWindowFuzz() {
