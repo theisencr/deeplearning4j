@@ -21,9 +21,10 @@ public class MovingWindowMatrixFuzzTest {
         rand.setSeed(123456789);
 
         int max = 10;
-        int min = 2;
+        int min = 4;
 
         int randomInt = rand.nextInt((max - min) + 1) + min;
+        int min = 2;
         int randomInt2 = rand.nextInt((max - min) + 1) + min;
 
         INDArray ones = Nd4j.ones(randomInt, randomInt);
