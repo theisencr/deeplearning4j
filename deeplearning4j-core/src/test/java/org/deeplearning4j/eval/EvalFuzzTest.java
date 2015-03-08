@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.util.FeatureUtil;
 
-import java.util.Random
+import java.util.Random;
 
 /**
  * Created by agibsonccc on 12/22/14.
