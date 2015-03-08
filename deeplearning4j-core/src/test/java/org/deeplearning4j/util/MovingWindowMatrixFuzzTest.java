@@ -8,7 +8,7 @@ import org.nd4j.linalg.factory.Nd4j;
 import static org.junit.Assert.assertEquals;
 
 import java.util.Random;
-import.java.lang.Math;
+import java.lang.Math;
 
 /**
  * Created by agibsonccc on 6/11/14.
