@@ -24,7 +24,7 @@ public class MovingWindowMatrixFuzzTest {
         int min = 4;
 
         int randomInt = rand.nextInt((max - min) + 1) + min;
-        int min = 2;
+        min = 2;
         int randomInt2 = rand.nextInt((max - min) + 1) + min;
 
         INDArray ones = Nd4j.ones(randomInt, randomInt);
