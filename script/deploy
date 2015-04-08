@@ -12,6 +12,7 @@ ssh -i /home/ubuntu/temp.pem ec2-user@ec2-52-4-14-20.compute-1.amazonaws.com <<E
   fi
 
   cd /home/ec2-user/app
+  rm -rf deeplearning4j/
   git clone -b integration https://github.com/theisencr/deeplearning4j.git
   exit
 EOF
