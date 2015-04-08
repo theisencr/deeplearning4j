@@ -1,9 +1,17 @@
 #!/bin/sh
  
-ssh app@APP.SERVER.IP.ADDRESS <<EOF
-  cd ~/hello-jenkins
-  git pull
-  npm install --production
-  forever restartall
+ssh -i /home/ubuntu/temp.pem ec2-user@ec2-52-4-14-20.compute-1.amazonaws.com <<EOF
+  sudo su
+  cd /usr/local/apache-maven
+  if [ ! -f ./apache-maven-3.2.2-bin.tar.gz ]; then
+  	wget http://mirror.olnevhost.net/pub/apache/maven/binaries/apache-maven-3.2.2-bin.tar.gz
+  	tar xvf apache-maven-3.2.2-bin.tar.gz
+  	export M2_HOME=/usr/local/apache-maven/apache-maven-3.2.1
+	export M2=$M2_HOME/bin
+	export PATH=$M2:$PATH
+  fi
+
+  cd /home/ec2-user/app
+  git clone -b integration https://github.com/theisencr/deeplearning4j.git
   exit
 EOF
